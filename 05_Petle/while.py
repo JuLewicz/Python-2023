@@ -59,3 +59,32 @@ else:
     print('Koniec')
 
 
+
+
+
+
+
+
+# rozwiązanie JL
+
+liczba = input("Podaj liczbę: ")
+
+suma_cyfr = 0
+
+for cyfra in liczba:
+
+    suma_cyfr += int(cyfra)
+
+print(f"Suma cyfr liczby {liczba} wynosi: {suma_cyfr}")
+
+
+#rozwiązanie MK
+
+n = int(input('podaj liczbe'))
+print(f'Podałeś liczbę: {n}')
+
+suma = 0
+while n>0:
+    suma += n%10
+    n//=10
+print(suma)
