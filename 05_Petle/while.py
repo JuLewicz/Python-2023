@@ -2,7 +2,7 @@ n = 5
 
 while n > 0:
     print(n)
-    n -= 1
+    n -= 1   #sprawdzaj co o 1 mniejszą liczbe
 
 n = 8
 while n > 0:
@@ -47,4 +47,15 @@ while n > 0:
     print(f'{n} tak')
 else:
     print('Koniec')
+
+
+i=0
+while i<100:
+    i+=1
+    if i % 2 == 0 and (i % 10 + i // 10) % 7 == 0:
+        print(i)
+        continue
+else:
+    print('Koniec')
+
 
