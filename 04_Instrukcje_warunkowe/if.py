@@ -1,10 +1,24 @@
-a = 3
+a = 4
 
 # IF
 if a == 3:
     print("Then shalt thou count to three, no more, no less.")
     print("Three shall be the number thou shalt count, and the number of the counting shall be three.")
     print("Four shalt thou not count, neither count thou two, excepting that thou then proceed to three. ")
+else:
+    print('Not three')
+
+# IF
+if a == 3 or a == 4:
+    if a == 3:
+        print('three')
+    else:
+        print('four')
+else:
+    print('Not three or four')
+
+
+
 
 n = int(input('Podaj liczbę'))
 print(n)
@@ -41,3 +55,13 @@ if (suma_cyfr % 7 == 0) and (i % 2 == 0):
     print(f'Dobra liczba')
 else:
     print(f'Zła liczba')
+
+
+
+# := "Walrus" operator
+if (i := int(input("podaj liczbę dwucyfrową"))) % 2 == 0 and (i % 10 + i // 10) % 7 == 0:
+    print(f'{i} dobra liczba')
+else:
+    print(f'{i} zła liczba')
+
+
