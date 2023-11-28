@@ -57,3 +57,23 @@ def fib(n):
 
 for i, f in fib(35):
     print("n=%d => %d" % (i, f))
+
+
+
+
+
+new = [(x + 6) for x in range(5)]
+
+print(new)
+
+
+tupla = [(x, str(x)) for x in range(15)]
+print(tupla)
+
+
+
+lista = {"Sedan": 1500, "SUV": 2000, "Pickup": 2500, "Minivan": 1600, "Van": 2400, "Semi": 13600, "Bicycle": 7, "Motorcycle": 110}
+
+wynik = [x.upper() for x, y in lista.items() if y > 2000]
+
+print(wynik)
