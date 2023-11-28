@@ -32,3 +32,26 @@ f'{pi:^30.2f}'
 f'{"-"*10}HELLO{"-"*10}'
 f'{"HELLO":-^25s}'
 
+
+
+#choinka
+
+wysokosc = int(input("Podaj wysokość choinki: "))
+
+# Rysuj choinkę
+for i in range(1, wysokosc + 1):
+    gwiazdki = "*" * (2 * i - 1)
+
+    wciecie = " " * (wysokosc - i)
+
+    print(wciecie + gwiazdki)
+
+trzonek = "*" * 1
+podstawa = "*" * 3
+print((wysokosc-1) * " " + trzonek)
+print((wysokosc-2) * " " + podstawa)
+
+
+
+
+
