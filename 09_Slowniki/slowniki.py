@@ -58,3 +58,59 @@ s
 'a' in s
 
 s = {1: "a", 2: 'b', "ala": [3, 4]}
+
+
+
+napisy = []
+czestosci = {}
+
+while True:
+    napis = input("Wprowadź dowolny napis: ")
+
+    if not napis:
+        break
+
+    napisy.append(napis)
+
+    if napis in czestosci:
+        czestosci[napis] += 1
+    else:
+        czestosci[napis] = 1
+
+print("Słownik ilości wystąpień napisów:")
+for napis, ilosc in czestosci.items():
+    print(f"{napis}: {ilosc}")
+
+
+
+
+
+
+
+
+
+
+
+
+
+napisy = {}
+while True:
+    napis = input("Wprowadź dowolny napis: ")
+
+    if not napis:
+        break
+
+
+    napisy[napis] = napisy.get(napis, 0) + 1
+
+
+for napis, ilosc in napisy.items():
+    print(f"{napis}: {ilosc}")
+
+
+
+
+
+
+
+
